@@ -5,7 +5,8 @@
       <div class="inner">
 
         <header>
-          <h1>2017 Voice Conversion Demo</h1>
+          <h1>Residual Compensation Based on Locally Linear Embedding for Voice Conversion</h1>
+	  <h2>Demo</h2>
         </header>
 
         <hr>
@@ -21,7 +22,7 @@
           <hr>
 	  <table border="2">
 	    <tr>
-		<td>&nbsp;</td><td>Source</td><td>Target</td><td>MLPG</td><td>MLPGGV</td><td>SWC_MLPGGV</td>
+		<td>&nbsp;</td><td>Source</td><td>Target</td><td>GMM</td><td>LLE</td><td>GMM-RC</td>
 	    </tr>
 	    	  
 	    <tr>
@@ -30,9 +31,73 @@
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/COSPRO 03_F004phr722_d.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_F004phr761_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_F002phr761_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/F004_to_F002_phr761_d_GMM_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/F004_to_F002_phr761_d_LLE_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/F004_to_F002_phr761_d_SWC_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+	    </tr>
+	    <tr>
+		<td> 
+		  F004 to F002
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_F004phr772_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_F002phr772_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/F004_to_F002_phr772_d_GMM_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/F004_to_F002_phr772_d_LLE_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/F004_to_F002_phr772_d_SWC_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+	    </tr>		  
+	    <tr>
+		<td> 
+		  F002 to F004
 		</td>
 		<td>
 		  <audio controls>
@@ -42,96 +107,134 @@
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/F004_to_F002_MLPG_test722.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_F004phr722_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/F004_to_F002_MLPGGV_test722.wav" type="audio/wav">
+		  <source src="wav/F002_to_F004_phr722_d_GMM_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/F004_to_F002_SWC_MLPGGV_test722.wav" type="audio/wav">
+		  <source src="wav/F002_to_F004_phr722_d_LLE_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/F002_to_F004_phr722_d_SWC_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 	    </tr>
-		  
 	    <tr>
 		<td> 
 		  F002 to F004
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/COSPRO 03_F002phr720_d.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_F002phr728_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/COSPRO 03_F004phr720_d.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_F004phr728_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/F002_to_F004_MLPG_test720.wav" type="audio/wav">
+		  <source src="wav/F002_to_F004_phr728_d_GMM_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/F002_to_F004_MLPGGV_test720.wav" type="audio/wav">
+		  <source src="wav/F002_to_F004_phr728_d_LLE_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/F002_to_F004_SWC_MLPGGV_test720.wav" type="audio/wav">
+		  <source src="wav/F002_to_F004_phr728_d_SWC_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 	    </tr>
-		  
 	    <tr>
 		<td> 
 		  M002 to M003
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/COSPRO 03_M002phr721_d.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_M002phr723_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/COSPRO 03_M003phr721_d.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_M003phr723_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/M002_to_M003_MLPG_test721.wav" type="audio/wav">
+		  <source src="wav/M002_to_M003_phr723_d_GMM_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/M002_to_M003_MLPGGV_test721.wav" type="audio/wav">
+		  <source src="wav/M002_to_M003_phr723_d_LLE_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/M002_to_M003_SWC_MLPGGV_test721.wav" type="audio/wav">
+		  <source src="wav/M002_to_M003_phr723_d_SWC_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 	    </tr>
-		  
+	    <tr>
+		<td> 
+		  M002 to M003
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_M002phr725_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_M003phr725_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/M002_to_M003_phr725_d_GMM_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/M002_to_M003_phr725_d_LLE_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/M002_to_M003_phr725_d_SWC_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+	    </tr>
 	    <tr>
 		<td> 
 		  M003 to M002
@@ -150,168 +253,338 @@
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/M003_to_M002_MLPG_test727.wav" type="audio/wav">
+		  <source src="wav/M003_to_M002_phr727_d_GMM_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/M003_to_M002_MLPGGV_test727.wav" type="audio/wav">
+		  <source src="wav/M003_to_M002_phr727_d_LLE_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/M003_to_M002_SWC_MLPGGV_test727.wav" type="audio/wav">
+		  <source src="wav/M003_to_M002_phr727_d_SWC_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 	    </tr> 
-		  
+	    <tr>
+		<td> 
+		  M003 to M002
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_M003phr765_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_M002phr765_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/M003_to_M002_phr765_d_GMM_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/M003_to_M002_phr765_d_LLE_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/M003_to_M002_phr765_d_SWC_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+	    </tr> 
 	    <tr>
 		<td> 
 		  M002 to F001
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/COSPRO 03_M002phr723_d.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_M002phr721_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/COSPRO 03_F001phr723_d.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_F001phr721_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/M002_to_F001_MLPG_test723.wav" type="audio/wav">
+		  <source src="wav/M002_to_F001_phr721_d_GMM_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/M002_to_F001_MLPGGV_test723.wav" type="audio/wav">
+		  <source src="wav/M002_to_F001_phr721_d_LLE_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/M002_to_F001_SWC_MLPGGV_test723.wav" type="audio/wav">
+		  <source src="wav/M002_to_F001_phr721_d_SWC_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 	    </tr> 
-		  
+	    <tr>
+		<td> 
+		  M002 to F001
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_M002phr777_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_F001phr777_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/M002_to_F001_phr777_d_GMM_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/M002_to_F001_phr777_d_LLE_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/M002_to_F001_phr777_d_SWC_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+	    </tr> 
 	    <tr>
 		<td> 
 		  M003 to F004
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/COSPRO 03_M003phr728_d.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_M003phr727_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/COSPRO 03_F004phr728_d.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_F004phr727_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/M003_to_F004_MLPG_test728.wav" type="audio/wav">
+		  <source src="wav/M003_to_F004_phr727_d_GMM_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/M003_to_F004_MLPGGV_test728.wav" type="audio/wav">
+		  <source src="wav/M003_to_F004_phr727_d_LLE_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/M003_to_F004_SWC_MLPGGV_test728.wav" type="audio/wav">
+		  <source src="wav/M003_to_F004_phr727_d_SWC_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 	    </tr> 
-		  
+	    <tr>
+		<td> 
+		  M003 to F004
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_M003phr797_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_F004phr797_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/M003_to_F004_phr797_d_GMM_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/M003_to_F004_phr797_d_LLE_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/M003_to_F004_phr797_d_SWC_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+	    </tr> 
 	    <tr>
 		<td> 
 		  F001 to M002
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/COSPRO 03_F001phr725_d.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_F001phr742_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/COSPRO 03_M002phr725_d.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_M002phr742_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/F001_to_M002_MLPG_test725.wav" type="audio/wav">
+		  <source src="wav/F001_to_M002_phr742_d_GMM_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/F001_to_M002_MLPGGV_test725.wav" type="audio/wav">
+		  <source src="wav/F001_to_M002_phr742_d_LLE_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/F001_to_M002_SWC_MLPGGV_test725.wav" type="audio/wav">
+		  <source src="wav/F001_to_M002_phr742_d_SWC_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 	    </tr> 
-		  
+	    <tr>
+		<td> 
+		  F001 to M002
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_F001phr760_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_M002phr760_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/F001_to_M002_phr760_d_GMM_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/F001_to_M002_phr760_d_LLE_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/F001_to_M002_phr760_d_SWC_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+	    </tr> 
 	    <tr>
 		<td> 
 		  F004 to M003
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/COSPRO 03_F004phr761_d.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_F004phr790_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/COSPRO 03_M003phr761_d.wav" type="audio/wav">
+		  <source src="wav/COSPRO 03_M003phr790_d.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/F004_to_M003_MLPG_test761.wav" type="audio/wav">
+		  <source src="wav/F004_to_M003_phr790_d_GMM_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/F004_to_M003_MLPGGV_test761.wav" type="audio/wav">
+		  <source src="wav/F004_to_M003_phr790_d_LLE_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 		<td>
 		  <audio controls>
-		  <source src="wav/F004_to_M003_SWC_MLPGGV_test761.wav" type="audio/wav">
+		  <source src="wav/F004_to_M003_phr790_d_SWC_MLPGGV.wav" type="audio/wav">
 		    Your browser does not support the audio element.
 		  </audio>
 		</td>
 	    </tr> 
-		  
+	    <tr>
+		<td> 
+		  F004 to M003
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_F004phr799_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/COSPRO 03_M003phr799_d.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/F004_to_M003_phr799_d_GMM_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/F004_to_M003_phr799_d_LLE_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+		<td>
+		  <audio controls>
+		  <source src="wav/F004_to_M003_phr799_d_SWC_MLPGGV.wav" type="audio/wav">
+		    Your browser does not support the audio element.
+		  </audio>
+		</td>
+	    </tr> 
 	  </table>
 
 
